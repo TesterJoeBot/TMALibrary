@@ -2,6 +2,7 @@ import SmallNav from "../components/SmallNav";
 import books from "@/data/books";
 import CustomHead from "@/components/CustomHead";
 import BookCard from "@/components/BookCard";
+import BookCardImage from "@/components/BookCard/BookCardImage";
 
 export default function Books() {
   return (
@@ -13,6 +14,7 @@ export default function Books() {
           <BookCard key={book.bookId}>
             <BookCard.Title>{book.bookTitle}</BookCard.Title>
             <BookCard.Author>{book.bookAuthor}</BookCard.Author>
+            {!!book.bookImage && <BookCard.Image src={book.bookImage} />}
           </BookCard>
         ))}
       </div>

@@ -6,18 +6,30 @@ const books = [
     bookAuthor: "Tolkien",
     bookAvailable: true,
     bookId: uuidv4(),
+    bookImage: "/LOTR.webp",
   },
+
+  {
+    bookTitle: "Yr Hobyd",
+    bookAuthor: "Tolkien",
+    bookAvailable: true,
+    bookId: uuidv4(),
+    bookImage: "/hobyd.jpg",
+  },
+
   {
     bookTitle: "Porn",
     bookAuthor: "Backdoor Sluts Nine",
     bookAvailable: false,
     bookId: uuidv4(),
+    bookImage: "/pron.webp",
   },
   {
     bookTitle: "Science",
     bookAuthor: "Scientists",
     bookAvailable: true,
     bookId: uuidv4(),
+    bookImage: "/science.webp",
   },
   {
     bookTitle: "The Adventures of Alice in Wonderland",
