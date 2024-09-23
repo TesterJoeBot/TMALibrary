@@ -7,7 +7,6 @@ export default function AboutUs() {
     <>
       <CustomHead />
       <SmallNav />
-      <Button>Main Button</Button>
     </>
   );
 }
