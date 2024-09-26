@@ -1,3 +1,5 @@
+import SmallNavButton from "../SmallNavButton";
+
 const SmallNav = () => {
   return (
     <>
@@ -11,7 +13,7 @@ const SmallNav = () => {
           text-align: center;
           justify-content: center;
           width: 100%;
-          background: #030422;
+          background: #021639;
           color: white;
           padding: 1rem;
           font-family: "Baskervville SC", serif;

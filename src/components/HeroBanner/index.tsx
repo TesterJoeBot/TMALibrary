@@ -5,7 +5,6 @@ const HeroBanner = () => {
     <>
       <div className="hero-banner-container">
         <HeaderLogo />
-        <p>Welcome</p>
       </div>
       <style jsx>{`
         .hero-banner-container {
@@ -14,7 +13,7 @@ const HeroBanner = () => {
           text-align: center;
           justify-content: center;
           width: 100%;
-          background: #030422;
+          background: #021639;
           color: white;
           padding: 2rem;
           height: 45rem;

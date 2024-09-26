@@ -2,6 +2,7 @@ import { ReactNode } from "react";
 import BookCardTitle from "./BookCardTitle";
 import BookCardAuthor from "./BookCardAuthor";
 import BookCardImage from "./BookCardImage";
+import BookCardAvailable from "./BookCardAvailable";
 
 interface BookCardProps {
   children: ReactNode;
@@ -29,4 +30,5 @@ export default Object.assign(BookCard, {
   Title: BookCardTitle,
   Author: BookCardAuthor,
   Image: BookCardImage,
+  Available: BookCardAvailable,
 });
