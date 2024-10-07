@@ -11,6 +11,7 @@ const BookCardAuthor = ({ children }: BookCardAuthorProps) => {
 
       <style jsx>{`
         .book-card-author {
+          font-family: "Baskervville SC", serif;
           font-style: italic;
           font-size: 1.5rem;
         }

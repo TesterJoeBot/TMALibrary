@@ -7,6 +7,7 @@ const books = [
     bookAvailable: true,
     bookId: uuidv4(),
     bookImage: "/LOTR.webp",
+    bookSummary: "All animals are equal - but some are more equal than others.",
   },
 
   {
@@ -15,6 +16,7 @@ const books = [
     bookAvailable: true,
     bookId: uuidv4(),
     bookImage: "/hobyd.jpg",
+    bookSummary: "All animals are equal - but some are more equal than others.",
   },
 
   {
@@ -23,6 +25,7 @@ const books = [
     bookAvailable: false,
     bookId: uuidv4(),
     bookImage: "/pron.webp",
+    bookSummary: "All animals are equal - but some are more equal than others.",
   },
   {
     bookTitle: "Science",
@@ -30,6 +33,7 @@ const books = [
     bookAvailable: true,
     bookId: uuidv4(),
     bookImage: "/science.webp",
+    bookSummary: "All animals are equal - but some are more equal than others.",
   },
   {
     bookTitle: "The Adventures of Alice in Wonderland",
@@ -37,6 +41,7 @@ const books = [
     bookAvailable: false,
     bookId: uuidv4(),
     bookImage: "/AliceinWonderland.jpg",
+    bookSummary: "All animals are equal - but some are more equal than others.",
   },
   {
     bookTitle: "His Dark Materials",
@@ -44,6 +49,7 @@ const books = [
     bookAvailable: false,
     bookId: uuidv4(),
     bookImage: "/HDM.jpg",
+    bookSummary: "All animals are equal - but some are more equal than others.",
   },
   {
     bookTitle: "Animal Farm",
@@ -51,6 +57,7 @@ const books = [
     bookAvailable: true,
     bookId: uuidv4(),
     bookImage: "/AF.jpg",
+    bookSummary: "All animals are equal - but some are more equal than others.",
   },
   {
     bookTitle: "Inferno",
@@ -58,6 +65,7 @@ const books = [
     bookAvailable: true,
     bookId: uuidv4(),
     bookImage: "/inferno.jpg",
+    bookSummary: "All animals are equal - but some are more equal than others.",
   },
   {
     bookTitle: "Purgatorio",
@@ -65,6 +73,7 @@ const books = [
     bookAvailable: true,
     bookId: uuidv4(),
     bookImage: "/purgatorio.jpg",
+    bookSummary: "All animals are equal - but some are more equal than others.",
   },
   {
     bookTitle: "Paradiso",
@@ -72,6 +81,7 @@ const books = [
     bookAvailable: true,
     bookId: uuidv4(),
     bookImage: "/paradiso.jpg",
+    bookSummary: "All animals are equal - but some are more equal than others.",
   },
   {
     bookTitle: "Live, Laugh Love",
@@ -79,6 +89,7 @@ const books = [
     bookAvailable: true,
     bookId: uuidv4(),
     bookImage: "/lll.jpg",
+    bookSummary: "All animals are equal - but some are more equal than others.",
   },
   {
     bookTitle: "The Sandy Beach",
@@ -86,6 +97,7 @@ const books = [
     bookAvailable: true,
     bookId: uuidv4(),
     bookImage: "/sandy.jpg",
+    bookSummary: "All animals are equal - but some are more equal than others.",
   },
   {
     bookTitle: "The Waffling of Nerds",
@@ -93,6 +105,7 @@ const books = [
     bookAvailable: false,
     bookId: uuidv4(),
     bookImage: "/nerds.jpg",
+    bookSummary: "All animals are equal - but some are more equal than others.",
   },
   {
     bookTitle: "The Art of Falling Asleep",
@@ -100,6 +113,7 @@ const books = [
     bookAvailable: true,
     bookId: uuidv4(),
     bookImage: "/asleep.jpg",
+    bookSummary: "All animals are equal - but some are more equal than others.",
   },
   {
     bookTitle: "The Art of Writing Passive Aggressive Book Names",
@@ -107,6 +121,7 @@ const books = [
     bookAvailable: false,
     bookId: uuidv4(),
     bookImage: "/writing.webp",
+    bookSummary: "All animals are equal - but some are more equal than others.",
   },
 ];
 
