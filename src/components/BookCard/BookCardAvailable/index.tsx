@@ -5,20 +5,25 @@ interface BookCardAvailableProps {
 }
 
 const BookCardAvailable = ({ bookAvailable }: BookCardAvailableProps) => {
-  if (bookAvailable == true) {
-    return <div>Available</div>;
-  } else {
-    return <div>Unavailable</div>;
-  }
-
   return (
     <>
-      <h2 className="book-card-available">{bookAvailable}</h2>
+      <p className="book-card-available">
+        {bookAvailable ? "Available" : "Unavailable"}
+      </p>
 
       <style jsx>{`
         .book-card-available {
           font-style: italic;
           font-size: 1.5rem;
+          text-align: right;
+        }
+        .book-card-available:before {
+          content: "";
+          display: inline-block;
+          width: 1rem;
+          height: 1rem;
+          border-radius: 50%;
+          background-color: ${bookAvailable ? "green" : "red"};
         }
       `}</style>
     </>
@@ -26,3 +31,5 @@ const BookCardAvailable = ({ bookAvailable }: BookCardAvailableProps) => {
 };
 
 export default BookCardAvailable;
+
+// push thingy to bottom (giggidy)

@@ -23,4 +23,33 @@ const LayoutColumns = ({
   );
 };
 
-export default Object.assign({}, { Columns: LayoutColumns });
+interface LayoutFooterProps {
+  children: ReactNode;
+  alignItems?: "stretch" | "flex-start" | "flex-end" | "center" | "baseline";
+}
+const LayoutFooter = ({
+  children,
+  alignItems = "center",
+}: LayoutFooterProps) => {
+  return (
+    <>
+      <div className="layout-footer">{children}</div>
+
+      <style jsx>{`
+        .layout-footer {
+          display: flex;
+          text-align: right;
+          flex-grow: 1;
+          margin: auto;
+          flex-direction: column;
+        }
+      `}</style>
+    </>
+  );
+};
+
+export default Object.assign(
+  {},
+  { Columns: LayoutColumns },
+  { Footer: LayoutFooter }
+);

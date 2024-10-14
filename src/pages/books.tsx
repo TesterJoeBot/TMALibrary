@@ -22,7 +22,9 @@ export default function Books() {
               {!!book.bookImage && <BookCard.Image src={book.bookImage} />}
               <BookCard.Summary>{book.bookSummary}</BookCard.Summary>
             </Layout.Columns>
-            <BookCard.Available bookAvailable={book.bookAvailable} />
+            <Layout.Footer>
+              <BookCard.Available bookAvailable={book.bookAvailable} />
+            </Layout.Footer>
           </BookCard>
         ))}
       </div>
