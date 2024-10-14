@@ -1,18 +1,35 @@
 import SmallNav from "../components/SmallNav";
-import books from "@/data/books";
 import CustomHead from "@/components/CustomHead";
 import BookCard from "@/components/BookCard";
-import BookCardImage from "@/components/BookCard/BookCardImage";
 import SmallNavButton from "@/components/SmallNavButton";
 import Layout from "@/components/Layout";
+import { useEffect, useState } from "react";
+import { Book } from "@/types";
+
+globalThis.help = () => {
+  console.log("Fuck Brackets and fuck you too.");
+};
 
 export default function Books() {
+  const [books, setBooks] = useState<Book[]>([]);
+
+  useEffect(() => {
+    const fetchBooks = async () => {
+      const response = await fetch("/api/books");
+
+      const data = await response.json();
+      setBooks(data.books);
+    };
+
+    fetchBooks();
+  }, []);
+
   return (
     <>
       <CustomHead />
       <SmallNav />
       <br></br>
-      <SmallNavButton href="/homepage">Back </SmallNavButton>
+      <SmallNavButton href="/homepage">Back</SmallNavButton>
       <div className="books-list">
         {books.map((book) => (
           <BookCard key={book.bookId}>
